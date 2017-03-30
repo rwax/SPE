@@ -1,0 +1,16 @@
+
+set polar
+set size square 1,1
+set origin 0.88,0
+
+set autoscale
+unset tics 
+unset border
+set xlabel ""
+set ylabel ""
+set title "Mapping onto the Ground Projection"
+replot
+
+unset multiplot
+
+! epstopdf ground_elements.eps;rm ground_elements.eps

@@ -1,0 +1,100 @@
+
+\documentclass[]{article}
+\usepackage{geometry}
+\geometry{lmargin=1in,rmargin=1in,bmargin=1.5in,tmargin=1.5in}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{subfig}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{amsmath,amsfonts,amssymb}% 
+\usepackage{bm}% 
+\usepackage{color} % text color
+\usepackage[dvipsnames]{xcolor} 
+
+\def\deriv#1{\frac{d}{d #1}}
+\def\derivs#1#2{\frac{d #1}{d #2}}
+\def\parderiv#1{\frac{\partial}{\partial #1}}
+\def\parderivs#1#2{\frac{\partial #1}{\partial #2}}
+\def\secparderiv#1{\frac{\partial^2}{\partial #1^2}}
+\def\secparderivs#1#2{\frac{\partial^2 #1}{\partial #2^2}}
+
+\begin{document}
+
+\begin{center}
+{\bf\Large Boundary Element Model for the\\Infrasound Source Function from a Confined Shot}
+
+\vspace*{20pt}
+
+Roger Waxler and Claus Hetzer \quad\quad NCPA at UM
+\end{center}
+
+\vspace*{40pt}
+
+\newpage
+
+\input{sections/mathematical_formulation.tex}
+
+\newpage
+
+\input{sections/discretization.tex}
+
+\newpage
+
+{\color{Blue} 
+\vspace*{15pt}
+
+\noindent {\bf\large Left to do:}
+
+\vspace*{10pt}
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[height=200pt]{figures/SPE_ground_surface.pdf}
+  \caption{{\color{Blue} Map of the ground surface at the SPE site.}}
+\end{figure*}
+
+\noindent {\bf\large Code development:}
+
+\begin{itemize}
+\item[] Algorithm development is close to being finished
+  \begin{itemize}
+  \item A toy (test) ground motion model needs to be developed
+  \item The resulting linear algebra problem should be made as explicit as possible.
+  \item Coding should begin 
+    \begin{itemize}
+    \item A toy model should be implemented in C/C++.
+    \item The spurious zero mode issue needs to be investigated and addressed. 
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\vspace*{10pt}
+
+\noindent {\bf\large The SPE Shots:}
+
+\vspace*{10pt}
+
+\begin{itemize}
+\item[] Ground topography at the site
+  \begin{itemize}
+  \item A surface map has been obtained with 10 meter resolution
+  \item Bicubic splines to be used to interpolate. 
+  \item Need to code up the $B(\phi)$ function determination.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item[] Ground motion
+  \begin{itemize}
+  \item Accelerometer data is being obtained. 
+  \item Need to settle on a data driven ground motion model. 
+  \end{itemize}
+\end{itemize}
+
+}
+
+
+\bibliographystyle{ieeetr}
+\bibliography{boundary_element}
+
+\end{document}

@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2010/Fink)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: files/boundary_element.aux
+The style file: ieeetr.bst
+Database file #1: boundary_element.bib
+I was expecting a `,' or a `}'---line 13 of file boundary_element.bib
+ :   
+ :   note={Appendix}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 4 entries,
+            1876 wiz_defined-function locations,
+            499 strings with 4050 characters,
+and the built_in function-call counts, 785 in all, are:
+= -- 76
+> -- 27
+< -- 0
++ -- 11
+- -- 7
+* -- 43
+:= -- 120
+add.period$ -- 7
+call.type$ -- 4
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 42
+empty$ -- 88
+format.name$ -- 7
+if$ -- 194
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 7
+newline$ -- 18
+num.names$ -- 4
+pop$ -- 19
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 15
+stack$ -- 0
+substring$ -- 24
+swap$ -- 10
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 7
+width$ -- 5
+write$ -- 40
+(There was 1 error message)

@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{morse1968theoretical}
+P.~M. Morse and K.~U. Ingard, {\em Theoretical Acoustics}.
+\newblock Princeton university press, 1968.
+
+\bibitem{schenck1968improved}
+H.~A. Schenck, ``Improved integral formulation for acoustic radiation
+  problems,'' {\em The journal of the acoustical society of America}, vol.~44,
+  no.~1, pp.~41--58, 1968.
+
+\bibitem{bai2013acoustic}
+M.~R. Bai, J.-G. Ih, and J.~Benesty, {\em Acoustic Array Systems: Theory,
+  Implementation, and Application}.
+\newblock John Wiley \& Sons, 2013.
+
+\bibitem{williams1999fourier}
+E.~G. Williams, {\em Fourier acoustics: sound radiation and nearfield
+  acoustical holography}.
+\newblock Academic press, 1999.
+
+\end{thebibliography}

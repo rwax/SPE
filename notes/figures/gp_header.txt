@@ -1,0 +1,23 @@
+unset key
+unset polar
+set parametric
+
+h_r=0.1
+az_steps=15
+h_az=2*pi/az_steps
+
+line_x(xj,yj,xk,yk,x)=xj+(xk-xj)*x
+line_y(xj,yj,xk,yk,x)=yj+(yk-yj)*x
+
+set size 1.8,1
+set term post eps enh mono solid 22 lw 4
+set out "ground_elements.eps"
+
+set multiplot 
+set size 1,1
+set origin 0,0
+set xrange [0:2*pi]
+set xlabel "Azimuth [rad]"
+set ylabel "Scaled radius" offset 1
+set title "Elements in the R-{/Symbol q} Plane"
+plot [0:1] \
